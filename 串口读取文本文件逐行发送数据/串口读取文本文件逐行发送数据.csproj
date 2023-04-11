@@ -7,7 +7,7 @@
     <ProjectGuid>{5D378B80-95E2-4F1F-AFFA-59141EFDB192}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>串口读取文本文件逐行发送数据</RootNamespace>
-    <AssemblyName>串口读取文本文件逐行发送数据</AssemblyName>
+    <AssemblyName>读取文本文件串口逐行发送数据</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SerialPort.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -79,6 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SerialPort.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

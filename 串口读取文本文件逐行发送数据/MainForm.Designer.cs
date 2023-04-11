@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.richTextBoxsenddata = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonsenddata = new System.Windows.Forms.Button();
             this.buttonchoosefile = new System.Windows.Forms.Button();
+            this.buttonsenddata = new System.Windows.Forms.Button();
             this.labelsendcount = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -79,17 +80,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(518, 44);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // buttonsenddata
-            // 
-            this.buttonsenddata.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonsenddata.Location = new System.Drawing.Point(175, 3);
-            this.buttonsenddata.Name = "buttonsenddata";
-            this.buttonsenddata.Size = new System.Drawing.Size(166, 38);
-            this.buttonsenddata.TabIndex = 0;
-            this.buttonsenddata.Text = "发送数据";
-            this.buttonsenddata.UseVisualStyleBackColor = true;
-            this.buttonsenddata.Click += new System.EventHandler(this.buttonsenddata_Click);
-            // 
             // buttonchoosefile
             // 
             this.buttonchoosefile.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -100,6 +90,17 @@
             this.buttonchoosefile.Text = "选择文件";
             this.buttonchoosefile.UseVisualStyleBackColor = true;
             this.buttonchoosefile.Click += new System.EventHandler(this.buttonchoosefile_Click);
+            // 
+            // buttonsenddata
+            // 
+            this.buttonsenddata.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonsenddata.Location = new System.Drawing.Point(175, 3);
+            this.buttonsenddata.Name = "buttonsenddata";
+            this.buttonsenddata.Size = new System.Drawing.Size(166, 38);
+            this.buttonsenddata.TabIndex = 0;
+            this.buttonsenddata.Text = "发送数据";
+            this.buttonsenddata.UseVisualStyleBackColor = true;
+            this.buttonsenddata.Click += new System.EventHandler(this.buttonsenddata_Click);
             // 
             // labelsendcount
             // 
@@ -117,8 +118,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 280);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "串口读取文本文件逐行发送数据";
+            this.Text = "读取文本文件串口逐行发送数据";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);

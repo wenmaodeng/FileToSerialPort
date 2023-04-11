@@ -19,7 +19,6 @@ namespace 串口读取文本文件逐行发送数据
         int 波特率 = int.Parse(System.Configuration.ConfigurationManager.AppSettings["波特率"]);
         int 发送间隔 = int.Parse(System.Configuration.ConfigurationManager.AppSettings["发送间隔"]);
         SerialPort serialPort = null;
-        bool IsSendData = false;
         Timer timer = null;
         string[] data = null;
         int sendindex = 0;
