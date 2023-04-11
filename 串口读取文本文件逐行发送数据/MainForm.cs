@@ -72,6 +72,7 @@ namespace 串口读取文本文件逐行发送数据
                     return;
                 }
                 data = temp.ToList().Where(x => !string.IsNullOrEmpty(x)).ToArray();
+                sendindex = 0;
                 labelsendcount.Text = $"{sendindex}/{data.Length}";
             }
         }
@@ -111,6 +112,7 @@ namespace 串口读取文本文件逐行发送数据
                 }
                 else
                 {
+                    sendindex = 0;
                     stopsend();
                     reset();
                 }
